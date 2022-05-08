@@ -26,4 +26,4 @@ const CreditCardForm = () => {
   )
 }
 
-export default CreditCardForm
+export default CreditCardForm;

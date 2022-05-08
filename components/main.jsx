@@ -5,7 +5,8 @@ import CreditCardForm from "./moviePayment/components/CreditCardForm";
 function Main() {
   return (<div>
     <CreditCardForm />
-  </div>);
+  </div>
+  );
 }
 
 export default Main;

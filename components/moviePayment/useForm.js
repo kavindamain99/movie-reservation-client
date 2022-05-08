@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 
 const useForm = () => {
     const [values, setValues] = useState ({
@@ -8,7 +8,7 @@ const useForm = () => {
       cvc: '',
       focus: ''
     })
-    const [erroes, setErroes] = useState()
+    const [errors, setErrors] = useState()
 
     const handleFocus = e => {
 

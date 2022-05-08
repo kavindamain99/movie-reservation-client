@@ -25464,7 +25464,7 @@ const useForm = ()=>{
         cvc: '',
         focus: ''
     });
-    const [erroes, setErroes] = _react.useState();
+    const [errors, setErrors] = _react.useState();
     const handleFocus = (e)=>{
     };
     const handleChange = (e)=>{
@@ -25479,7 +25479,7 @@ const useForm = ()=>{
         errors
     };
 };
-_s(useForm, "Tm1FuDJyjrGv92KZzukWFzXnnDM=");
+_s(useForm, "NVk4kTjAbG5e0r2C1j24vIfMhwY=");
 exports.default = useForm;
 
   $parcel$ReactRefreshHelpers$ceab.postlude(module);

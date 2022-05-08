@@ -3,6 +3,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: transparent;
+    background-image: url("./pngtree-film-and-television-film-festival-film-atmosphere-poster-image_215414.jpg");
+
   }
   
   .formDiv {

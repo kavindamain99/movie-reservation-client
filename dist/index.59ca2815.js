@@ -25229,7 +25229,7 @@ var _useForm = require("../useForm");
 var _useFormDefault = parcelHelpers.interopDefault(_useForm);
 var _reactCreditCards = require("react-credit-cards");
 var _reactCreditCardsDefault = parcelHelpers.interopDefault(_reactCreditCards);
-//import "./CreditCardForm.css";
+var _creditCardFormCss = require("./CreditCardForm.css");
 var _stylesCompiledCss = require("react-credit-cards/es/styles-compiled.css");
 var _s = $RefreshSig$();
 const CreditCardForm = ()=>{
@@ -25239,71 +25239,72 @@ const CreditCardForm = ()=>{
         className: "container",
         __source: {
             fileName: "components/moviePayment/components/CreditCardForm.js",
-            lineNumber: 12
+            lineNumber: 13
         },
         __self: undefined,
         children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
             className: "box justify-content-center align-items-center",
             __source: {
                 fileName: "components/moviePayment/components/CreditCardForm.js",
-                lineNumber: 13
+                lineNumber: 14
             },
             __self: undefined,
             children: [
                 /*#__PURE__*/ _jsxRuntime.jsxs("div", {
-                    className: "form-div",
+                    className: "formDiv",
                     __source: {
                         fileName: "components/moviePayment/components/CreditCardForm.js",
-                        lineNumber: 14
+                        lineNumber: 15
                     },
                     __self: undefined,
                     children: [
                         /*#__PURE__*/ _jsxRuntime.jsx("div", {
-                            className: "credit-card",
+                            className: "creditCard",
                             __source: {
                                 fileName: "components/moviePayment/components/CreditCardForm.js",
-                                lineNumber: 15
+                                lineNumber: 16
                             },
                             __self: undefined,
                             children: /*#__PURE__*/ _jsxRuntime.jsx(_reactCreditCardsDefault.default, {
-                                name: values.name,
-                                number: values.number,
-                                expiry: values.expiry,
-                                cvc: values.securityCode,
+                                cvc: values.cardSecurityCode,
+                                expiry: values.cardExpiration,
                                 focused: values.focus,
+                                name: values.cardName,
+                                number: values.cardNumber,
                                 __source: {
                                     fileName: "components/moviePayment/components/CreditCardForm.js",
-                                    lineNumber: 16
+                                    lineNumber: 17
                                 },
                                 __self: undefined
                             })
                         }),
                         /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Form, {
-                            onsubmit: handleSubmit,
+                            onSubmit: handleSubmit,
                             __source: {
                                 fileName: "components/moviePayment/components/CreditCardForm.js",
-                                lineNumber: 24
+                                lineNumber: 25
                             },
                             __self: undefined,
                             children: [
                                 /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Group, {
                                     __source: {
                                         fileName: "components/moviePayment/components/CreditCardForm.js",
-                                        lineNumber: 25
+                                        lineNumber: 26
                                     },
                                     __self: undefined,
                                     children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Control, {
                                         type: "text",
-                                        id: "name",
-                                        number: "name",
+                                        id: "cardName",
+                                        "data-testid": "cardName",
+                                        name: "cardName",
                                         placeholder: "Cardholder Name",
-                                        value: values.name,
+                                        value: values.cardName,
                                         onChange: handleChange,
-                                        onfocus: handleFocus,
+                                        onFocus: handleFocus,
                                         isValid: errors.cname,
                                         __source: {
                                             fileName: "components/moviePayment/components/CreditCardForm.js",
-                                            lineNumber: 26
+                                            lineNumber: 27
                                         },
                                         __self: undefined
                                     })
@@ -25311,96 +25312,163 @@ const CreditCardForm = ()=>{
                                 /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Group, {
                                     __source: {
                                         fileName: "components/moviePayment/components/CreditCardForm.js",
-                                        lineNumber: 37
+                                        lineNumber: 39
                                     },
                                     __self: undefined,
                                     children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Control, {
                                         type: "number",
-                                        id: "number",
-                                        number: "number",
-                                        placeholder: "Cardholder Number",
-                                        value: values.number,
+                                        id: "cardNumber",
+                                        "data-testid": "cardNumber",
+                                        name: "cardNumber",
+                                        placeholder: "Card Number",
+                                        value: values.cardNumber,
                                         onChange: handleChange,
-                                        onfocus: handleFocus,
+                                        onFocus: handleFocus,
                                         isValid: errors.cnumber,
                                         __source: {
                                             fileName: "components/moviePayment/components/CreditCardForm.js",
-                                            lineNumber: 38
+                                            lineNumber: 40
                                         },
                                         __self: undefined
                                     })
                                 }),
-                                /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Row, {
+                                /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Row, {
                                     __source: {
                                         fileName: "components/moviePayment/components/CreditCardForm.js",
-                                        lineNumber: 49
+                                        lineNumber: 52
                                     },
                                     __self: undefined,
-                                    children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Col, {
-                                        __source: {
-                                            fileName: "components/moviePayment/components/CreditCardForm.js",
-                                            lineNumber: 50
-                                        },
-                                        __self: undefined,
-                                        children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Group, {
+                                    children: [
+                                        /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Col, {
                                             __source: {
                                                 fileName: "components/moviePayment/components/CreditCardForm.js",
-                                                lineNumber: 51
+                                                lineNumber: 53
                                             },
                                             __self: undefined,
-                                            children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Control, {
-                                                type: "text",
-                                                id: "expiry",
-                                                number: "expiry",
-                                                placeholder: "Expiration Date",
-                                                value: values.expiry,
-                                                onChange: handleChange,
-                                                onfocus: handleFocus,
-                                                isValid: errors.cexpiry,
+                                            children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Group, {
                                                 __source: {
                                                     fileName: "components/moviePayment/components/CreditCardForm.js",
-                                                    lineNumber: 52
+                                                    lineNumber: 54
                                                 },
-                                                __self: undefined
+                                                __self: undefined,
+                                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Control, {
+                                                    type: "text",
+                                                    name: "cardType",
+                                                    id: "cardType",
+                                                    "data-testid": "cardType",
+                                                    placeholder: "Card Type",
+                                                    value: values.cardType,
+                                                    onChange: handleChange,
+                                                    onFocus: handleFocus,
+                                                    isValid: errors.ctype,
+                                                    __source: {
+                                                        fileName: "components/moviePayment/components/CreditCardForm.js",
+                                                        lineNumber: 55
+                                                    },
+                                                    __self: undefined
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Col, {
+                                            __source: {
+                                                fileName: "components/moviePayment/components/CreditCardForm.js",
+                                                lineNumber: 68
+                                            },
+                                            __self: undefined,
+                                            children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Group, {
+                                                __source: {
+                                                    fileName: "components/moviePayment/components/CreditCardForm.js",
+                                                    lineNumber: 69
+                                                },
+                                                __self: undefined,
+                                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Control, {
+                                                    type: "text",
+                                                    id: "cardExpiration",
+                                                    "data-testid": "cardExpiration",
+                                                    name: "cardExpiration",
+                                                    placeholder: "Expiration Date",
+                                                    value: values.cardExpiration,
+                                                    onChange: handleChange,
+                                                    onFocus: handleFocus,
+                                                    isValid: errors.cexp,
+                                                    __source: {
+                                                        fileName: "components/moviePayment/components/CreditCardForm.js",
+                                                        lineNumber: 70
+                                                    },
+                                                    __self: undefined
+                                                })
                                             })
                                         })
-                                    })
+                                    ]
                                 }),
-                                /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Row, {
+                                /*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Row, {
                                     __source: {
                                         fileName: "components/moviePayment/components/CreditCardForm.js",
-                                        lineNumber: 65
+                                        lineNumber: 84
                                     },
                                     __self: undefined,
-                                    children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Col, {
-                                        __source: {
-                                            fileName: "components/moviePayment/components/CreditCardForm.js",
-                                            lineNumber: 66
-                                        },
-                                        __self: undefined,
-                                        children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Group, {
+                                    children: [
+                                        /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Col, {
                                             __source: {
                                                 fileName: "components/moviePayment/components/CreditCardForm.js",
-                                                lineNumber: 67
+                                                lineNumber: 85
                                             },
                                             __self: undefined,
-                                            children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Control, {
-                                                type: "number",
-                                                id: "securityCode",
-                                                number: "securityCode",
-                                                placeholder: "Card Security Code",
-                                                value: values.securityCode,
-                                                onChange: handleChange,
-                                                onfocus: handleFocus,
-                                                isValid: errors.csc,
+                                            children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Group, {
                                                 __source: {
                                                     fileName: "components/moviePayment/components/CreditCardForm.js",
-                                                    lineNumber: 68
+                                                    lineNumber: 86
                                                 },
-                                                __self: undefined
+                                                __self: undefined,
+                                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Control, {
+                                                    type: "number",
+                                                    id: "cardSecurityCode",
+                                                    "data-testid": "cardSecurityCode",
+                                                    name: "cardSecurityCode",
+                                                    placeholder: "Security Code",
+                                                    value: values.cardSecurityCode,
+                                                    onChange: handleChange,
+                                                    onFocus: handleFocus,
+                                                    isValid: errors.ccvv,
+                                                    __source: {
+                                                        fileName: "components/moviePayment/components/CreditCardForm.js",
+                                                        lineNumber: 87
+                                                    },
+                                                    __self: undefined
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Col, {
+                                            __source: {
+                                                fileName: "components/moviePayment/components/CreditCardForm.js",
+                                                lineNumber: 100
+                                            },
+                                            __self: undefined,
+                                            children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Group, {
+                                                __source: {
+                                                    fileName: "components/moviePayment/components/CreditCardForm.js",
+                                                    lineNumber: 101
+                                                },
+                                                __self: undefined,
+                                                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Form.Control, {
+                                                    type: "text",
+                                                    id: "cardPostalCode",
+                                                    "data-testid": "cardPostalCode",
+                                                    name: "cardPostalCode",
+                                                    placeholder: "Postal Code",
+                                                    value: values.cardPostalCode,
+                                                    onChange: handleChange,
+                                                    onFocus: handleFocus,
+                                                    isValid: errors.cpostal,
+                                                    __source: {
+                                                        fileName: "components/moviePayment/components/CreditCardForm.js",
+                                                        lineNumber: 102
+                                                    },
+                                                    __self: undefined
+                                                })
                                             })
                                         })
-                                    })
+                                    ]
                                 }),
                                 /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
                                     size: "block",
@@ -25408,7 +25476,7 @@ const CreditCardForm = ()=>{
                                     type: "submit",
                                     __source: {
                                         fileName: "components/moviePayment/components/CreditCardForm.js",
-                                        lineNumber: 81
+                                        lineNumber: 116
                                     },
                                     __self: undefined,
                                     children: "Validate"
@@ -25423,7 +25491,7 @@ const CreditCardForm = ()=>{
                     show: errors.show,
                     __source: {
                         fileName: "components/moviePayment/components/CreditCardForm.js",
-                        lineNumber: 86
+                        lineNumber: 121
                     },
                     __self: undefined,
                     children: errors.message
@@ -25445,7 +25513,7 @@ $RefreshReg$(_c, "CreditCardForm");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","react-bootstrap":"h2YVd","../useForm":"4Fdps","react-credit-cards":"7pahO","react-credit-cards/es/styles-compiled.css":"uwjMW","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"25uA3":[function() {},{}],"h2YVd":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","react-bootstrap":"h2YVd","../useForm":"4Fdps","react-credit-cards":"7pahO","react-credit-cards/es/styles-compiled.css":"uwjMW","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./CreditCardForm.css":"6v1q9"}],"25uA3":[function() {},{}],"h2YVd":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Accordion", ()=>_accordionDefault.default
@@ -38295,10 +38363,12 @@ var _s = $RefreshSig$();
 const useForm = ()=>{
     _s();
     const [values, setValues] = _react.useState({
-        name: '',
-        number: '',
-        expiry: '',
-        securityCode: '',
+        cardName: '',
+        cardNumber: '',
+        cardType: '',
+        cardExpiration: '',
+        cardSecurityCode: '',
+        cardPostalCode: '',
         focus: ''
     });
     const [errors, setErrors] = _react.useState({
@@ -38306,7 +38376,7 @@ const useForm = ()=>{
     const handleFocus = (e)=>{
         setValues({
             ...values,
-            focus: e.target.name === 'securityCode' ? 'cvc' : e.target.name
+            focus: e.target.name === 'cardSecurityCodes' ? 'cvc' : e.target.name
         });
     };
     const handleChange = (e)=>{
@@ -38328,7 +38398,7 @@ const useForm = ()=>{
         errors
     };
 };
-_s(useForm, "CdDeIp/AmSEYXfIcIHAr3ia/qkc=");
+_s(useForm, "LFyvFsk2cARLc+rvctI9UswvijU=");
 exports.default = useForm;
 
   $parcel$ReactRefreshHelpers$ceab.postlude(module);
@@ -38344,18 +38414,47 @@ var _cardValidatorDefault = parcelHelpers.interopDefault(_cardValidator);
 function Validate(values) {
     let errors = {
     };
-    let creditCard = _cardValidatorDefault.default.number(values.number);
-    creditCard.expirationDate = _cardValidatorDefault.default.expirationDate(values.expiry);
-    creditCard.cardholderName = _cardValidatorDefault.default.cardholderName(values.name);
-    creditCard.cvv = _cardValidatorDefault.default.cvv(values.securityCode);
-    //console.log(creditCard)
+    let creditCard = _cardValidatorDefault.default.number(values.cardNumber);
+    creditCard.expirationDate = _cardValidatorDefault.default.expirationDate(values.cardExpiration);
+    creditCard.cvv = _cardValidatorDefault.default.cvv(values.cardSecurityCode);
+    creditCard.cardholderName = _cardValidatorDefault.default.cardholderName(values.cardName);
+    creditCard.postalCode = _cardValidatorDefault.default.postalCode(values.cardPostalCode);
     errors.show = true;
-    errors.variant = 'danger';
-    errors.message = 'An unknown error occured. Please try again later';
+    errors.variant = "danger";
+    errors.message = "An unknown error occured. Please try again later";
     errors.cname = false;
     errors.cnumber = false;
-    errors.cexpiry = false;
-    errors.csc = false;
+    errors.ctype = false;
+    errors.cexp = false;
+    errors.ccvv = false;
+    errors.cpostal = false;
+    if (values.cardPostalCode === null || !values.cardPostalCode.trim()) errors.message = "Credit card postal code is not complete";
+    else if (creditCard.postalCode.isValid) errors.cpostal = true;
+    else errors.message = "Credit card postal code is invalid";
+    //Card CVV expiration
+    if (values.cardSecurityCode === null || !values.cardSecurityCode.trim()) errors.message = "Credit card CVC is not complete";
+    else if (creditCard.cvv.isValid) errors.ccvv = true;
+    else errors.message = "Credit card CVC is invalid";
+    //Card Expiration Verification
+    if (values.cardExpiration === null || !values.cardExpiration.trim()) errors.message = "Credit card expiration date is not complete";
+    else if (creditCard.expirationDate.isValid) errors.cexp = true;
+    else errors.message = "Credit card expiration date is invalid";
+    //Card Type Verification
+    if (values.cardType === null || !values.cardType.trim() || creditCard.card === null) errors.message = "Credit card type is not complete";
+    else if (creditCard.card.type && creditCard.card.type.toUpperCase() === values.cardType.toUpperCase()) errors.ctype = true;
+    else errors.message = "Credit card type is invalid";
+    //Card Number Verification
+    if (values.cardNumber === null || !values.cardNumber.trim()) errors.message = "Credit card number is not complete";
+    else if (creditCard.isValid) errors.cnumber = true;
+    else errors.message = "Credit card number is invalid";
+    //Cardholder Name Verification
+    if (values.cardName === null || !values.cardName.trim()) errors.message = "Cardholder name is not complete";
+    else if (creditCard.cardholderName.isValid) errors.cname = true;
+    else errors.message = "Cardholder name is invalid";
+    if (errors.ctype && errors.cname && errors.cnumber && errors.cexp && errors.cpostal && errors.ccvv) {
+        errors.variant = "success";
+        errors.message = "Credit Card is valid";
+    }
     return errors;
 }
 exports.default = Validate;
@@ -40791,6 +40890,6 @@ else module.exports = Function('return this')();
     module.exports = QJ;
 }).call(this);
 
-},{}],"uwjMW":[function() {},{}]},["2rAXy","2RQGy","7uhtB"], "7uhtB", "parcelRequire1889")
+},{}],"uwjMW":[function() {},{}],"6v1q9":[function() {},{}]},["2rAXy","2RQGy","7uhtB"], "7uhtB", "parcelRequire1889")
 
 //# sourceMappingURL=index.59ca2815.js.map

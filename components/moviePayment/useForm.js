@@ -3,10 +3,12 @@ import Validate from "./Validate";
 
 const useForm = () => {
     const [values, setValues] = useState ({
-      name: '',
-      number: '',
-      expiry: '',
-      securityCode: '',
+      cardName: '',
+      cardNumber: '',
+      cardType: '',
+      cardExpiration: '',
+      cardSecurityCode: '',
+      cardPostalCode: '',
       focus: ''
     })
     const [errors, setErrors] = useState({})
@@ -14,7 +16,7 @@ const useForm = () => {
     const handleFocus = e => {
       setValues({
         ...values,
-        focus: (e.target.name === 'securityCode') ? 'cvc' : e.target.name 
+        focus: (e.target.name === 'cardSecurityCodes') ? 'cvc' : e.target.name 
       });
 
     }

@@ -25183,19 +25183,19 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _creaditCardForm = require("./moviePayment/components/CreaditCardForm");
-var _creaditCardFormDefault = parcelHelpers.interopDefault(_creaditCardForm);
+var _creditCardForm = require("./moviePayment/components/CreditCardForm");
+var _creditCardFormDefault = parcelHelpers.interopDefault(_creditCardForm);
 function Main() {
     return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
         __source: {
             fileName: "components/main.jsx",
-            lineNumber: 5
+            lineNumber: 6
         },
         __self: this,
-        children: /*#__PURE__*/ _jsxRuntime.jsx(_creaditCardFormDefault.default, {
+        children: /*#__PURE__*/ _jsxRuntime.jsx(_creditCardFormDefault.default, {
             __source: {
                 fileName: "components/main.jsx",
-                lineNumber: 6
+                lineNumber: 7
             },
             __self: this
         })
@@ -25211,129 +25211,7 @@ $RefreshReg$(_c, "Main");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","./moviePayment/components/CreaditCardForm":"9566a","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"9566a":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9cac = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9cac.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxRuntime = require("react/jsx-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _bootstrapMinCss = require("bootstrap/dist/css/bootstrap.min.css");
-var _useForm = require("../useForm");
-var _useFormDefault = parcelHelpers.interopDefault(_useForm);
-var _reactCreditCards = require("react-credit-cards");
-var _reactCreditCardsDefault = parcelHelpers.interopDefault(_reactCreditCards);
-var _s = $RefreshSig$();
-//import 'react-credit-cards/es/styles-compiles.css'
-const CreaditCardForm = ()=>{
-    _s();
-    const { handleChange , handleFocus , handleSubmit , Values , errors  } = _useFormDefault.default();
-    return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
-        __source: {
-            fileName: "components/moviePayment/components/CreaditCardForm.js",
-            lineNumber: 10
-        },
-        __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
-            className: "box justify-content-center align-items-center",
-            __source: {
-                fileName: "components/moviePayment/components/CreaditCardForm.js",
-                lineNumber: 11
-            },
-            __self: undefined,
-            children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
-                className: "form-div",
-                __source: {
-                    fileName: "components/moviePayment/components/CreaditCardForm.js",
-                    lineNumber: 12
-                },
-                __self: undefined,
-                children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
-                    className: "creadit-card",
-                    __source: {
-                        fileName: "components/moviePayment/components/CreaditCardForm.js",
-                        lineNumber: 13
-                    },
-                    __self: undefined,
-                    children: /*#__PURE__*/ _jsxRuntime.jsx(_reactCreditCardsDefault.default, {
-                        name: Values.name,
-                        number: Values.number,
-                        expiry: Values.expiration,
-                        cvc: Values.cvc,
-                        focused: values.focus,
-                        __source: {
-                            fileName: "components/moviePayment/components/CreaditCardForm.js",
-                            lineNumber: 14
-                        },
-                        __self: undefined
-                    })
-                })
-            })
-        })
-    }));
-};
-_s(CreaditCardForm, "AYv8cgBdsy9SQgeq6SuhH6ujFkk=", false, function() {
-    return [_useFormDefault.default];
-});
-_c = CreaditCardForm;
-exports.default = CreaditCardForm;
-var _c;
-$RefreshReg$(_c, "CreaditCardForm");
-
-  $parcel$ReactRefreshHelpers$9cac.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","../useForm":"4Fdps","react-credit-cards":"7pahO","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"25uA3":[function() {},{}],"4Fdps":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ceab = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ceab.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _s = $RefreshSig$();
-const useForm = ()=>{
-    _s();
-    const [values, setValues] = _react.useState({
-        name: '',
-        number: '',
-        expiration: '',
-        cvc: '',
-        focus: ''
-    });
-    const [erroes, setErroes] = _react.useState();
-    const handleFocus = (e)=>{
-    };
-    const handleChange = (e)=>{
-    };
-    const handleSubmit = (e)=>{
-    };
-    return {
-        handleChange,
-        handleSubmit,
-        handleFocus,
-        values,
-        errors
-    };
-};
-_s(useForm, "Tm1FuDJyjrGv92KZzukWFzXnnDM=");
-exports.default = useForm;
-
-  $parcel$ReactRefreshHelpers$ceab.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"JacNc":[function(require,module,exports) {
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./moviePayment/components/CreditCardForm":"bxApo"}],"JacNc":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -25485,7 +25363,131 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"fNmB3"}],"7pahO":[function(require,module,exports) {
+},{"react-refresh/runtime":"fNmB3"}],"bxApo":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a010 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a010.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _bootstrapMinCss = require("bootstrap/dist/css/bootstrap.min.css");
+var _useForm = require("../useForm");
+var _useFormDefault = parcelHelpers.interopDefault(_useForm);
+var _reactCreditCards = require("react-credit-cards");
+var _reactCreditCardsDefault = parcelHelpers.interopDefault(_reactCreditCards);
+var _creditCardFormCss = require("./CreditCardForm.css");
+var _stylesCompiledCss = require("react-credit-cards/es/styles-compiled.css");
+var _s = $RefreshSig$();
+const CreditCardForm = ()=>{
+    _s();
+    const { handleChange , handleFocus , handleSubmit , values , errors  } = _useFormDefault.default();
+    return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
+        className: "container",
+        __source: {
+            fileName: "components/moviePayment/components/CreditCardForm.js",
+            lineNumber: 11
+        },
+        __self: undefined,
+        children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+            className: "box justify-content-center align-items-center",
+            __source: {
+                fileName: "components/moviePayment/components/CreditCardForm.js",
+                lineNumber: 12
+            },
+            __self: undefined,
+            children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                className: "form-div",
+                __source: {
+                    fileName: "components/moviePayment/components/CreditCardForm.js",
+                    lineNumber: 13
+                },
+                __self: undefined,
+                children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                    className: "credit-card",
+                    __source: {
+                        fileName: "components/moviePayment/components/CreditCardForm.js",
+                        lineNumber: 14
+                    },
+                    __self: undefined,
+                    children: /*#__PURE__*/ _jsxRuntime.jsx(_reactCreditCardsDefault.default, {
+                        name: values.name,
+                        number: values.number,
+                        expiry: values.expiration,
+                        cvc: values.cvc,
+                        focused: values.focus,
+                        __source: {
+                            fileName: "components/moviePayment/components/CreditCardForm.js",
+                            lineNumber: 15
+                        },
+                        __self: undefined
+                    })
+                })
+            })
+        })
+    }));
+};
+_s(CreditCardForm, "ah78Q5GzhR+SAcMFEQd6smtJg1I=", false, function() {
+    return [_useFormDefault.default];
+});
+_c = CreditCardForm;
+exports.default = CreditCardForm;
+var _c;
+$RefreshReg$(_c, "CreditCardForm");
+
+  $parcel$ReactRefreshHelpers$a010.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"8xIwr","react":"6TuXu","bootstrap/dist/css/bootstrap.min.css":"25uA3","../useForm":"4Fdps","react-credit-cards":"7pahO","react-credit-cards/es/styles-compiled.css":"uwjMW","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J","./CreditCardForm.css":"6v1q9"}],"25uA3":[function() {},{}],"4Fdps":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ceab = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ceab.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
+const useForm = ()=>{
+    _s();
+    const [values, setValues] = _react.useState({
+        name: '',
+        number: '',
+        expiration: '',
+        cvc: '',
+        focus: ''
+    });
+    const [erroes, setErroes] = _react.useState();
+    const handleFocus = (e)=>{
+    };
+    const handleChange = (e)=>{
+    };
+    const handleSubmit = (e)=>{
+    };
+    return {
+        handleChange,
+        handleSubmit,
+        handleFocus,
+        values,
+        errors
+    };
+};
+_s(useForm, "Tm1FuDJyjrGv92KZzukWFzXnnDM=");
+exports.default = useForm;
+
+  $parcel$ReactRefreshHelpers$ceab.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"6TuXu","@parcel/transformer-js/src/esmodule-helpers.js":"JacNc","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"5V79J"}],"7pahO":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
@@ -27446,6 +27448,6 @@ else module.exports = Function('return this')();
     module.exports = QJ;
 }).call(this);
 
-},{}]},["2rAXy","2RQGy","7uhtB"], "7uhtB", "parcelRequire1889")
+},{}],"uwjMW":[function() {},{}],"6v1q9":[function() {},{}]},["2rAXy","2RQGy","7uhtB"], "7uhtB", "parcelRequire1889")
 
 //# sourceMappingURL=index.59ca2815.js.map

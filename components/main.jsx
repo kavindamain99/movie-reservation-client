@@ -1,10 +1,11 @@
 import React from "react";
-import CreaditCardForm from "./moviePayment/components/CreaditCardForm";
+import CreditCardForm from "./moviePayment/components/CreditCardForm";
+ 
 
 function Main() {
-  return <div>
-    <CreaditCardForm/>
-  </div>;
+  return (<div>
+    <CreditCardForm />
+  </div>);
 }
 
 export default Main;

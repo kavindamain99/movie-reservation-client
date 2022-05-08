@@ -55258,7 +55258,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./pngtree-film-and-television-film-festival-film-atmosphere-poster-image_215414.jpg":[["pngtree-film-and-television-film-festival-film-atmosphere-poster-image_215414.c73c58b4.jpg","components/moviePayment/components/pngtree-film-and-television-film-festival-film-atmosphere-poster-image_215414.jpg"],"components/moviePayment/components/pngtree-film-and-television-film-festival-film-atmosphere-poster-image_215414.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/react-credit-cards/es/styles-compiled.css":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/react-credit-cards/es/styles-compiled.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -55311,17 +55311,20 @@ var CreditCardForm = function CreditCardForm() {
     number: values.cardNumber
   })), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form, {
     onSubmit: handleSubmit
-  }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Group, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Control, {
+  }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Group, {
+    className: "form"
+  }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Control, {
     type: "text",
     id: "cardName",
-    "data-testid": "cardName",
     name: "cardName",
     placeholder: "Cardholder Name",
     value: values.cardName,
     onChange: handleChange,
     onFocus: handleFocus,
     isValid: errors.cname
-  })), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Group, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Control, {
+  })), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Group, {
+    className: "form"
+  }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Control, {
     type: "number",
     id: "cardNumber",
     "data-testid": "cardNumber",
@@ -55331,11 +55334,12 @@ var CreditCardForm = function CreditCardForm() {
     onChange: handleChange,
     onFocus: handleFocus,
     isValid: errors.cnumber
-  })), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Group, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Control, {
+  })), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, {
+    className: "form"
+  }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Group, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Control, {
     type: "text",
     name: "cardType",
     id: "cardType",
-    "data-testid": "cardType",
     placeholder: "Card Type",
     value: values.cardType,
     onChange: handleChange,
@@ -55344,17 +55348,17 @@ var CreditCardForm = function CreditCardForm() {
   }))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Group, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Control, {
     type: "text",
     id: "cardExpiration",
-    "data-testid": "cardExpiration",
     name: "cardExpiration",
     placeholder: "Expiration Date",
     value: values.cardExpiration,
     onChange: handleChange,
     onFocus: handleFocus,
     isValid: errors.cexp
-  })))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Group, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Control, {
+  })))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, {
+    className: "form"
+  }, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Group, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Control, {
     type: "number",
     id: "cardSecurityCode",
-    "data-testid": "cardSecurityCode",
     name: "cardSecurityCode",
     placeholder: "Security Code",
     value: values.cardSecurityCode,
@@ -55364,7 +55368,6 @@ var CreditCardForm = function CreditCardForm() {
   }))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Group, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Form.Control, {
     type: "text",
     id: "cardPostalCode",
-    "data-testid": "cardPostalCode",
     name: "cardPostalCode",
     placeholder: "Postal Code",
     value: values.cardPostalCode,
@@ -55372,6 +55375,7 @@ var CreditCardForm = function CreditCardForm() {
     onFocus: handleFocus,
     isValid: errors.cpostal
   })))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Button, {
+    className: "button",
     size: "block",
     id: "validateButton",
     type: "submit"
@@ -55444,7 +55448,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51687" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52338" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

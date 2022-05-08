@@ -1,7 +1,7 @@
 import valid from 'card-validator';
 
-export default function Validate(values){
-    let errors = {};
+export default function Validate(values) {
+  let errors = {};
   let creditCard = valid.number(values.cardNumber);
 
   creditCard.expirationDate = valid.expirationDate(values.cardExpiration);
@@ -91,5 +91,5 @@ export default function Validate(values){
     errors.message = "Credit Card is valid";
   }
 
-    return  errors;
+  return errors;
 }

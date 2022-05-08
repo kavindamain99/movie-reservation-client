@@ -113,7 +113,7 @@ const CreditCardForm = () => {
             </Button>
           </Form>
         </div>
-        <Alert id="alertMessage" variant={errors.variant} show={errors.show}>
+        <Alert id="alertMessage" variant={errors.variant} show={errors.show} visibility= "hidden">
           {errors.message}
         </Alert>
       </div>

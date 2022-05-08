@@ -55382,7 +55382,8 @@ var CreditCardForm = function CreditCardForm() {
   }, "Validate"))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Alert, {
     id: "alertMessage",
     variant: errors.variant,
-    show: errors.show
+    show: errors.show,
+    visibility: "hidden"
   }, errors.message)));
 };
 
@@ -55448,7 +55449,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52338" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57642" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

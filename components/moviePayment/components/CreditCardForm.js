@@ -88,7 +88,7 @@ const CreditCardForm = () => {
         </Alert>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default CreditCardForm;

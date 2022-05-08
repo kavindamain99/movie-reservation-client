@@ -38306,7 +38306,7 @@ const useForm = ()=>{
     const handleFocus = (e)=>{
         setValues({
             ...values,
-            focus: e.target.name
+            focus: e.target.name === 'securityCode' ? 'cvc' : e.target.name
         });
     };
     const handleChange = (e)=>{
@@ -38344,6 +38344,11 @@ var _cardValidatorDefault = parcelHelpers.interopDefault(_cardValidator);
 function Validate(values) {
     let errors = {
     };
+    let creditCard = _cardValidatorDefault.default.number(values.number);
+    creditCard.expirationDate = _cardValidatorDefault.default.expirationDate(values.expiry);
+    creditCard.cardholderName = _cardValidatorDefault.default.cardholderName(values.name);
+    creditCard.cvv = _cardValidatorDefault.default.cvv(values.securityCode);
+    //console.log(creditCard)
     errors.show = true;
     errors.variant = 'danger';
     errors.message = 'An unknown error occured. Please try again later';

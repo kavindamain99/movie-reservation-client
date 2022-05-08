@@ -14,8 +14,8 @@ const useForm = () => {
     const handleFocus = e => {
       setValues({
         ...values,
-        focus: e.target.name  
-      })
+        focus: (e.target.name === 'securityCode') ? 'cvc' : e.target.name 
+      });
 
     }
 
@@ -32,7 +32,7 @@ const useForm = () => {
       setErrors(Validate(values))
     };
 
-  return { handleChange, handleSubmit, handleFocus, values, errors}
-}
+  return { handleChange, handleSubmit, handleFocus, values, errors};
+};
 
 export default useForm

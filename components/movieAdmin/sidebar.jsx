@@ -71,7 +71,9 @@ export default function Sidebar() {
               <MdOutlineMovie
                 style={{ marginRight: "5px", marginTop: "-8px" }}
               />
-              <a href="/movies">Movies</a>
+              <a href="/movies" style={{ textDecoration: "none" }}>
+                New Movie
+              </a>
             </NavText>
             <NavItem>
               <NavText>New Movie</NavText>

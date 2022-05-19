@@ -8,6 +8,7 @@ function PaymentDetails() {
   const [phonenumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
 
+  const [paymentList, setPaymentList] = useState([]);
   const addPayment = () => {
     Axios.post("http://localhost:8000/create", {
       name: name,
@@ -30,6 +31,7 @@ function PaymentDetails() {
   return (
     <div className="form-style-1">
       <div className="form-style-8">
+        <h1>Payment Details</h1>
         <label>Full Name:</label>
         <input
           type="text"
@@ -51,12 +53,11 @@ function PaymentDetails() {
             setEmail(event.target.value);
           }}
         />
-
-
         <button class="button" onClick={addPayment}>Next</button>
-
+        
       </div>
     </div>
+    
   );
 
 }

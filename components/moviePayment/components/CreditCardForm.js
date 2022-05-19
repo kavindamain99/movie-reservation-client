@@ -23,7 +23,7 @@ const CreditCardForm = () => {
             />
           </div>
           <Form onSubmit={handleSubmit}>
-            <Form.Group  className="form">
+            <Form.Group className="form">
               <Form.Control
                 type="text"
                 id="cardName"
@@ -35,7 +35,7 @@ const CreditCardForm = () => {
                 isValid={errors.cname}
               />
             </Form.Group>
-            <Form.Group  className="form">
+            <Form.Group className="form">
               <Form.Control
                 type="number"
                 id="cardNumber"
@@ -48,7 +48,7 @@ const CreditCardForm = () => {
                 isValid={errors.cnumber}
               />
             </Form.Group>
-            <Row  className="form">
+            <Row className="form">
               <Col>
                 <Form.Group >
                   <Form.Control
@@ -78,7 +78,7 @@ const CreditCardForm = () => {
                 </Form.Group>
               </Col>
             </Row>
-            <Row  className="form">
+            <Row className="form">
               <Col>
                 <Form.Group>
                   <Form.Control
@@ -108,12 +108,12 @@ const CreditCardForm = () => {
                 </Form.Group>
               </Col>
             </Row>
-            <Button className="button"  size="block" id="validateButton" type="submit">
+            <Button className="button" size="block" id="validateButton" type="submit">
               Validate
             </Button>
           </Form>
         </div>
-        <Alert id="alertMessage" variant={errors.variant} show={errors.show} visibility= "hidden">
+        <Alert id="alertMessage" variant={errors.variant} show={errors.show} visibility="hidden">
           {errors.message}
         </Alert>
       </div>

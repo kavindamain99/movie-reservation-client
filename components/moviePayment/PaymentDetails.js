@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import Axios from "axios";
 import "./Payment.css";
 
-
-
 function PaymentDetails() {
   const [name, setName] = useState("");
   const [phonenumber, setPhoneNumber] = useState("");

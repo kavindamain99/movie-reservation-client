@@ -5,9 +5,11 @@ import CreditCardForm from "./moviePayment/components/CreditCardForm";
 
 function Home() {
     return(
-        <BrowserRouter>
+         
+        <Routes>
         <CreditCardForm />
-        </BrowserRouter>
+        </Routes>
+         
         );
 
 }

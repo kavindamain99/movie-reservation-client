@@ -2,10 +2,11 @@ import React from 'react'
 
 export default function Footer() {
   return (
-     <>
-     <footer>
-              <h2>Amount</h2>
-          </footer>
-     </>
+    <>
+      <footer className="footer">
+        <h2>Amount</h2>
+        <h2 className="text">2,700.00</h2>
+      </footer>
+    </>
   )
 }

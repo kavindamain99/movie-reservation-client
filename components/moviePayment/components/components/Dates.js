@@ -2,24 +2,22 @@ import React from 'react'
 import "./PDF.css";
 
 const Dates = () => {
-    const showdate=new Date();
-    const displaytodaydate=showdate.getDate()+'/'+showdate.getMonth()+'/'+showdate.getFullYear();
+  const showdate = new Date();
+  const displaytodaydate = showdate.getDate() + '/' + showdate.getMonth() + '/' + showdate.getFullYear();
   return (
     <>
-    <article>
+      <article>
         <ul>
-            <li>
-                <span>Payment Transaction No -</span>
-               
-                </li>
-                 
-            <li><span>Transcation Date -</span>
-            <input class="date" type="text" value={displaytodaydate} readonly="true" /> 
-            </li>
+          <li>
+            <span>Payment Transaction No -- 452316423</span>
+          </li>
+          <li><span>Transcation Date -</span>
+            <input class="date" type="text" value={displaytodaydate} readonly="true" />
+          </li>
         </ul>
-    </article>
-    
-</>
+      </article>
+
+    </>
   )
 }
 

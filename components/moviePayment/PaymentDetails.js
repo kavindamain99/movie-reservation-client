@@ -68,7 +68,7 @@ const getPayment = () => {
            
             </div>
             <div>
-            <button onClick={getPayment}>Show </button>
+            <link to="/" onClick={getPayment}>Show </link>
             
             {paymentList.map((val, key) => {
           return  (
